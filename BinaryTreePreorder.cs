@@ -14,11 +14,8 @@
 public class Solution {
     public IList<int> PreorderTraversal(TreeNode root) {
         IList<int> ret = new List<int>();
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        
         TreeNode currentNode = root;
         recurse(root, ret);
-        
         return ret;
     }
     
